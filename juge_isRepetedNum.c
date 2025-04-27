@@ -1,0 +1,30 @@
+#include<stdbool.h>
+#include<stdio.h>
+
+
+int main() {
+	
+	bool num_digit[10] = {false};
+	long n;
+	int digit;
+	
+
+	printf("Enter numbers:");
+	scanf("%d", &n);
+
+	while(n > 0) {
+		digit = n % 10;
+		if (num_digit[digit]) {
+			break;
+		}
+		num_digit[digit] = true;
+		n /= 10;
+	}
+
+	if (n > 0) 
+		printf("Have repeted digit");
+	else
+		printf("No repeted digit");
+	return 0;
+	
+}
