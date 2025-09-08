@@ -17,9 +17,10 @@ void mathScores(int scores[]) {
 }
 
 void displayScores(int scores[]) {
-	cout << "\nAll scores:" << endl;
+	cout << "\nAll scores:"<< endl;
 	for (int i = 0; i < STUDENT_COUNT;i++) {
 		cout <<"student"<<(i+1)<<":" << scores[i] << endl;
+	
 	}
 }
 
